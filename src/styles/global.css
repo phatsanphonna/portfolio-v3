@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Athiti:wght@200;300;400;500;600;700&display=swap");
+
+:root {
+    --gray-110: rgb(110, 110, 110);
+    --gray-90: rgb(90, 90, 90);
+    --gray-70: rgb(70, 70, 70);
+    --gray-50: rgb(50, 50, 50);
+    --gray-30: rgb(30, 30, 30);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Athiti", sans-serif;
+}
+
+.disable-select {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(200, 200, 200);
+}

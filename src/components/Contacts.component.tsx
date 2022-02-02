@@ -49,9 +49,9 @@ const Works = () => {
   return (
     <Root className='m-auto' ref={rootRef}>
       <div
-        className='container flex flex-col justify-center items-center'
+        className='container flex flex-col justify-center items-center p-5 xl:px-10'
       >
-        <div className='w-9/10 flex flex-col justify-center items-center gap-14'>
+        <div className='w-9/10 flex flex-col justify-center items-center gap-5 md:gap-14'>
           <div ref={titleRef}>
             <Title >
               ต้องการคุยกับเราใช่ไหม
@@ -62,18 +62,18 @@ const Works = () => {
             <Paragraph className='text-center text-sm md:text-[20px] font-normal' >
               <>
                 ถ้าอยากคุยกับเราจริง ๆ ก็ลองทักอีเมลมาหาเรา หรือไม่ก็ ทักเฟสบุ๊คมาหาเราเลยก็ได้นะ
-                <br />เราต้อนรับทุกคนเสมอเลย ส่วนใครที่เป็น <LinkURL url='https://www.youtube.com/watch?v=j5xleWfZEa0'>WIZ*ONE </LinkURL>
-                เราอยากคุยมาก ๆ เลย
+                เราต้อนรับทุกคนเสมอเลย ส่วนใครที่เป็น <LinkURL url='https://www.youtube.com/watch?v=j5xleWfZEa0'>WIZ*ONE</LinkURL>
+                {' '}เราอยากคุยมาก ๆ เลย
               </>
             </Paragraph>
           </div>
 
-          <div className='flex flex-row justify-center items-center gap-7' ref={socialMediaRef}>
+          <div className='flex flex-row justify-center items-center gap-7 md:w-3/4' ref={socialMediaRef}>
             <a
               href='mailto:phatsanphon2004@outlook.com'
               className={
                 `text-[rgb(70,70,70)] hover:text-[rgb(190,190,190)]
-            hover:bg-[rgb(70,70,70)] hover:py-1 hover:px-2 transition-all text-4xl`}>
+            hover:bg-[rgb(70,70,70)] hover:py-1 hover:px-2 transition-all text-xl md:text-4xl`}>
               <FontAwesomeIcon
                 icon={faEnvelope} />
             </a>
@@ -84,7 +84,7 @@ const Works = () => {
               rel="noopener noreferrer"
               className={
                 `text-[rgb(70,70,70)] hover:text-[rgb(190,190,190)]
-            hover:bg-[rgb(70,70,70)] hover:py-2 hover:px-2 transition-all text-4xl`}>
+            hover:bg-[rgb(70,70,70)] hover:py-2 hover:px-2 transition-all text-xl md:text-4xl`}>
               <FontAwesomeIcon
                 icon={faFacebook} />
             </a>
